@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Banking System</title>
+
+    <!--swiper js from cdn-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+
+
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+    <!-- AOS  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+
+</head>
+<body onload="loader()">
+
+  <!-- loader for splash screen -->
+  <div id="loading"></div>
+
+<!-- navbar starts here  -->
+
+<nav class="navbar navbar-dark navbar-expand-lg" style="background-color: #EAAA00;">
+  <a class="navbar-brand" href="./index.html">Sparks Bank</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" id="a" href="./index.html"><strong>Home </strong><span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="b" href="aboutus.html"><strong>About</strong></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="c" href="./customers.html"><strong>Beneficiary</strong></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="d" href="./contactus.html"><strong>Contact Us</strong></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!-- navbar ends here  -->
+<marquee direction="right" style="color:black;">Notifications - Alerts - Important dates</marquee>
+  
+  
+  <!--swiper starts here-->   
+
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-interval="1500" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+
+  </ol>
+  <div class="carousel-inner">
+    <div class="swiper-slide carousel-item active">
+      <img class="d-block w-100" src="img/img1.png">
+    </div>
+    <div class="swiper-slide carousel-item">
+      <img class="d-block w-100" src="img/img2.jpg">
+    </div>
+    <div class="swiper-slide carousel-item">
+      <img class="d-block w-100" src="img/Money_Transfer_01_generated.png">
+    </div>
+    <div class="swiper-slide carousel-item">
+      <img class="d-block w-100" src="img/img3.jpg">
+    </div>
+    <div class="swiper-slide carousel-item">
+      <img class="d-block w-100" src="img/img4.jpg">
+    </div>
+    <div class="swiper-slide carousel-item">
+      <img class="d-block w-100" src="img/img5.jpg">
+    </div>
+    <div class="swiper-slide carousel-item">
+      <img class="d-block w-100" src="img/img6.jpg">
+    </div>
+  </div>
+</div>
+
+           <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script> 
+           <script>
+
+          const swiper = new Swiper('.swiper', {
+            autoplay:{
+              delay:3000,
+              disableOnInteraction:false,
+            },
+                        
+        loop: true,
+
+        pagination: {
+          el: '.swiper-pagination',
+          clickable:true,
+        },
+
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+
+        
+      });
+           </script>
+
+
+
+
+    
+    <!-- here content starts here -->
+    <div class="container-fluid hero-content">
+      <div class="row align-items-center">
+        <div class="col-md-6 col-sm-12 text-center" data-aos="fade-up">
+          <h2>Welcome to Sparks Bank </h2>
+          <p class="lead muted">Money Transaction</p>
+          <p>Easy Way To Transfer Money</p>
+          <br>
+          <br>
+          <a class="get-started" href="./customers.html">Transfer Money</a>
+        </div>
+        <div class="col-md-6 col-sm-12 text-center" data-aos="fade-left">
+          <div class="hero-img-div">
+            <img class="hero-img" src="bank.png" alt="img-showing-money-transfer">          </div>
+        </div>
+      </div>
+    </div>
+    <!-- here content ends here -->
+
+
+
+
+    <!-- footer starts here -->
+    <div class="footer" style="margin-top: 5px;">
+   <!-- <div class="container" id="Foodie">
+
+<h1 style="color:#6d597a;font-family: Lucida Handwriting; margin-top: 55px;font-size: 30px;font-weight: 500;  box-shadow:2px 6px 18px rgba(66,57,238,0.3);
+" ><b>Sparks Foundation Bank</b></h1>
+</div> -->
+  <div class="container">
+    <!-- <div class="row"> -->
+      <div class="col-sm-6">
+        <h3 style="color:#6d597a;font-family: Lucida Handwriting; margin-top: 55px;font-size: 25px;font-weight: 500;
+        " ><b>Sparks Bank</b></h3>
+        <p>Sparks Bank is the place<br>
+            where customers feel the sense of safety<br>
+            for their property. And also,In the bank,<br>
+            where customers can send the money<br>
+            in easy way..!Transaction of money is main<br>
+            part where customer takes shelter of the bank.<br>
+        </p>        
+      </div>
+      <div class="col-sm-6">
+              <h3 style="color:#6d597a;font-family: Lucida Handwriting; margin-top: 55px;font-size: 25px;font-weight: 600;
+              ">Bank Address</h3>
+              <p style="color: black;font-size: 17px;">
+                Raj Nagar Extension dist.Ghaziabad, Uttar Pradesh<br>
+                201017
+                <br>
+                Telephone no. : 9876543210
+              </p>
+        <p style="color: black;font-size: 17px;">Email : shivampandey@gmail.com</p>
+
+      </div>
+      
+    </div>
+
+    
+  </div>
+  
+</div>
+
+<footer class="white-section" id="footer">
+  <div class="container-fluid">
+    <a href="https://www.facebook.com/">
+      <i class="fa fa-2x fa-facebook social-icon"> </i>
+    </a>
+
+    <a href="https://www.twitter.com/">
+      <i class="fa fa-2x fa-twitter social-icon"> </i>
+    </a>
+
+
+    <a href="https://www.instagram.com/">
+      <i class="fa fa-2x fa-instagram social-icon"> </i>
+    </a>
+
+    <a href="https://www.youtube.com/">
+      <i class="fa fa-2x fa-youtube social-icon"> </i>
+    </a>
+
+    <a href="http://linkedin.com/" target="_blank">
+      <i class="fa fa-2x fa-linkedin social-icon"> </i>
+    </a>
+    <p>© Copyright 2023 Shivam Pandey</p>
+  </div>
+</footer>
+
+    <!-- footer ends here -->
+
+    <!-- spalsh screen js -->
+    <script>
+      var preloader = document.getElementById("loading");
+      function loader(){
+        preloader.style.display = 'none';
+      }
+    </script>
+
+    <script src="assets/js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"></script>
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"></script>
+
+    <!-- aos data  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 700,
+      });
+    </script>
+    
+</body>
+</html>
